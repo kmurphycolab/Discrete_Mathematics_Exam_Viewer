@@ -2,6 +2,7 @@ numpy
 pandas
 matplotlib
 seaborn
+pymupdf
 
 streamlit
 streamlit_tree_select
