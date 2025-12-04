@@ -3,6 +3,7 @@ pandas
 matplotlib
 seaborn
 pymupdf
+openpyxl
 
 streamlit
 streamlit_tree_select
