@@ -57,11 +57,16 @@ It is not at all reliable or even validated. There is little good to be said abo
 st.markdown(f"""  
 ### Version History
             
+**0.2 (2025/12/12)** 
+* Added repeat papers for 2022/23 --- 2024/25. I want to add older papers, might get to this early next week.
+* Added a visualisation page showing breakdown of marks by topic.
+
 **0.1 (2025/12/03)** 
 * Initial version with warts and all
 * Only has final exam papers for 2022/23 --- 2024/25 (no repeats yet)
 
 **TODO**
+
 * Add more past papers (and don't add 2025/26)
 * Perform a sanity check on topics, on tasks, and on keywords. (will do this when I add more papers so that all are consistent.)   
 * Add description/summary for each task.   

@@ -17,6 +17,10 @@ a question could tasks "_Represent a relation as a digraph._" add "_Identify pro
 search_by_topic_intro = """
 The Discrete Mathematics module is divided into topics, sub-topics and in some cases sub-sub-topics.
 This division is follows closely the organisational structure of the notes.
+
+Note that there is no topic "Computational Thinking" since that appears 
+across all other topics in the python questions. 
+So search by keyword "python" to find these questions.
 """
 
 difficulty = {

@@ -21,12 +21,14 @@ def predict_grade(paper, task_skill_level, seed=None):
 
     grade = 0
     df_paper = df.query(f"paper=='{paper}'")
+    df_paper.difficulty = df_paper.difficulty.fillna(3).astype(int)
+
     for idx, row in df_paper.iterrows():
         tasks = [
             (t.strip() if t.endswith(".") else t.strip()+".")
             for t in row.tasks.split(".") if t.strip()
         ]
-        for task in tasks:
+        for task in tasks:            
             pr_correct = skills[task_skill_level[task]][row.difficulty-1]
             pr_correct = np.clip(pr_correct+rng.normal(scale=0.1),0,1)
             grade += row.mark * pr_correct / len(tasks)
@@ -45,6 +47,9 @@ def build_page():
     for task in tasks:
         if task in task_info:
             help = f"##### Task: {task}\n\n" + task_info[task]['summary']
+            if task_info[task]['related']:
+                help += "\n**Related Tasks**\n\n* " + "\n* ".join(task_info[task]['related'])
+
         else:
             help = None
         task_skill_level[task] = st.select_slider(task,skills.keys(), key=task, help=help)

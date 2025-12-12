@@ -1,5 +1,4 @@
 import streamlit as st
-
 from my_lib import *
 
 st.set_page_config(
@@ -15,6 +14,7 @@ pg = st.navigation([
     st.Page("p_search_by_difficulty.py", title="Search by Difficulty", icon="🔎"),
     st.Page("p_search_by_paper.py", title="Search by Paper", icon="🔎"),
     st.Page("p_exam_papers.py", title="Exam Papers", icon="📕"),
+    st.Page("p_visualisations.py", title="Exam Paper Statistics", icon="📈"),
     st.Page("p_predict_my_grade.py", title="Predict my Grade", icon="🔥"),
 ])
 pg.run()

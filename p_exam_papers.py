@@ -2,10 +2,11 @@ import streamlit as st
 from my_lib import *
 from content import *
 
+
 def build_page():
     st.header("Past exam papers ...")
 
-    for paper in df.paper.unique():
+    for paper in sorted(df.paper.unique()):
         st.write(f"### {paper}")
 
         cols = st.columns(2)
