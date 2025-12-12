@@ -58,7 +58,7 @@ st.markdown(f"""
 ### Version History
             
 **0.2 (2025/12/12)** 
-* Added repeat papers for 2022/23 --- 2024/25. I want to add older papers, might get to this early next week.
+* Added repeat papers for 2023/24 and 2024/25. I want to add older papers, might get to this early next week.
 * Added a visualisation page showing breakdown of marks by topic.
 
 **0.1 (2025/12/03)** 
