@@ -56,6 +56,9 @@ It is not at all reliable or even validated. There is little good to be said abo
 
 st.markdown(f"""  
 ### Version History
+
+**0.3 (2025/12/19)** 
+* Added field to mark questions whose answers are incorrect. Yes, I could fix the errors but that would change the official paper/solutions. So instead I mark solutions that have issues.
             
 **0.2 (2025/12/12)** 
 * Added repeat papers for 2023/24 and 2024/25. I want to add older papers, might get to this early next week.
@@ -64,6 +67,7 @@ st.markdown(f"""
 **0.1 (2025/12/03)** 
 * Initial version with warts and all
 * Only has final exam papers for 2022/23 --- 2024/25 (no repeats yet)
+
 
 **TODO**
 

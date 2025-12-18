@@ -91,11 +91,16 @@ def display_question(data, header=True, detail=True):
 * **Tasks:** {data.tasks}
 * **Keywords:** {data.keywords}
 * **Difficulty:** {data.difficulty}
-* **Applicable for 2025/26:** {not data[na_column]}           
-""")
+* **Applicable for 2025/26:** {not data[na_column]}          
+"""
+ + (f"* **Comment:** {data.comment}\n" if data.comment else "")
+ + (f"* :red[**Warning:** {data.error}]\n" if data.error else "")
+)
+        
     question = get_question(data)
     png_bytes = question.tobytes("png")
     b64 = base64.b64encode(png_bytes).decode()
+
 
     html = f"""
 <div style="
@@ -118,7 +123,7 @@ def display_question(data, header=True, detail=True):
 # common processing
     
 
-df = pd.read_excel("questions.xlsx")
+df = pd.read_excel("questions.xlsx").fillna("")
 for c in ['page', 'top', 'bottom']:
     df[c] = df[c].astype(int)
 df[na_column] = (df[na_column]=="YES")
