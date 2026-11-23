@@ -56,6 +56,9 @@ It is not at all reliable or even validated. There is little good to be said abo
 st.markdown(f"""  
 ### Version History
 
+**0.4 (2026/11/23)** 
+* Added 2025/26 papers.  
+
 **0.3 (2025/12/19)** 
 * Added field to mark questions whose answers are incorrect. Yes, I could fix the errors but that would change the official paper/solutions. So instead I mark solutions that have issues.
             
