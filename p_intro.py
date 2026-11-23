@@ -2,7 +2,6 @@ import streamlit as st
 from my_lib import *
 from content import *
 
-
 st.header(f"{MODULE} Exam Guide")
 
 st.markdown(f"""
@@ -12,7 +11,7 @@ providing some structure to questions in past exam papers.
 But first this app should come with a long list of disclaimers: 
 
 1. Performance on past exam papers is no guarantee of performance on future exam papers.
-2. This is an experiment and is a first iteration, so I might have coded some questions incorrectly. (I would be delighted if people send me corrections.)
+2. This is an experiment and still in development, so I might have coded some questions incorrectly. (I would be delighted if people send me corrections.)
 3. The grade prediction calculator is probably worthless. 
 """)
 

@@ -5,7 +5,7 @@ st.set_page_config(
     page_title="Discrete Mathematics Study Guide",
     page_icon="📕",
 )
-
+ 
 pg = st.navigation([
     st.Page("p_intro.py", title="Introduction", icon="💁‍♂️"),
     st.Page("p_search_by_topic.py", title="Search by Topic", icon="🔎"),

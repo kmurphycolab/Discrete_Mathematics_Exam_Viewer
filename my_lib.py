@@ -1,7 +1,7 @@
 import streamlit as st
 
 import pandas as pd
-import fitz
+import pymupdf as fitz
 import base64
 import numpy as np
 from pathlib import Path
